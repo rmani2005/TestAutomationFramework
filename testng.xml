@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Framework" >
+    <listeners>
+        <listener class-name="com.clover.solution.ui.util.listeners.TestListener"/>
+        <listener class-name="com.clover.solution.ui.util.listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Testing my portfolio site">
+        <classes><class name="com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity"/></classes>
+    </test>  
+</suite>

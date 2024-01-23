@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.clover.solution.ui.test.TC004_check_the_JetBlue">
+        <methods>
+          <include name="preCondition"/>
+          <include name="cooldown"/>
+          <include name="TC004_check_the_JetBlue_Test" invocation-numbers="0"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.clover.solution.ui.test.TC004_check_the_JetBlue -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-23T15:50:03 EST" name="Test Automation Framework" finished-at="2024-01-23T15:50:05 EST" duration-ms="2882">
+    <groups>
+    </groups>
+    <test started-at="2024-01-23T15:50:03 EST" name="Testing my portfolio site" finished-at="2024-01-23T15:50:05 EST" duration-ms="2882">
+      <class name="com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity@1a4927d6]" started-at="2024-01-23T15:50:04 EST" name="preCondition" finished-at="2024-01-23T15:50:04 EST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="TC004_check_myPortfoliosite_SanityTest(java.lang.reflect.Method)[pri:0, instance:com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity@1a4927d6]" started-at="2024-01-23T15:50:04 EST" name="TC004_check_myPortfoliosite_SanityTest" description="TC004 check the clover Site using JSON" finished-at="2024-01-23T15:50:05 EST" duration-ms="1724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity.TC004_check_myPortfoliosite_SanityTest(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_check_myPortfoliosite_SanityTest -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity@1a4927d6]" started-at="2024-01-23T15:50:05 EST" name="postCondition" finished-at="2024-01-23T15:50:05 EST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="cooldown()[pri:0, instance:com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity@1a4927d6]" started-at="2024-01-23T15:50:05 EST" name="cooldown" finished-at="2024-01-23T15:50:06 EST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cooldown -->
+      </class> <!-- com.clover.solution.ui.test.TC001_check_myPortfoliosite_Sanity -->
+    </test> <!-- Testing my portfolio site -->
+  </suite> <!-- Test Automation Framework -->
+</testng-results>
