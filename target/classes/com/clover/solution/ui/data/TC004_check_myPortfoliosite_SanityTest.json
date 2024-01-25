@@ -1,0 +1,11 @@
+[  
+    {
+    "env": "test",
+    "browser": "CHROME",
+    "username": "username",
+    "password": "password",
+    "engine_url_variable": "myportfoliourl",
+    "hero_text":"Manikandan Ravi",
+    "projects_text":"Projects"
+	}
+]

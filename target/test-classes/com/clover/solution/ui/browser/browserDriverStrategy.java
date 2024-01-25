@@ -9,5 +9,6 @@ public abstract class browserDriverStrategy {
 
 	@Setter @Getter private String browser;
     public abstract WebDriver getDriverInstance();
+   
 	
 }
