@@ -36,14 +36,12 @@ pipeline
             
             post 
             {
-               
-                    archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
+  	 			success 
+                    {
+	               archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
                     archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
                     echo 'Successfully!'
-                     success 
-                  {
-	               
-                }
+                    }
                 
 		        failure {
 		       		currentBuild.result = 'SUCCESS'
