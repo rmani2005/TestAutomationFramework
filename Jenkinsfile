@@ -25,7 +25,10 @@ pipeline
                 
         
             }
-            
+         }
+         stage ('Starting ART job') 
+         {
+    		build job: 'APITestFramework'            
             post 
             {
   	 			success 
@@ -33,6 +36,7 @@ pipeline
 	                archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
                     archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
                     echo 'Successfully!'
+                    
                     }
                 
 		        failure {
