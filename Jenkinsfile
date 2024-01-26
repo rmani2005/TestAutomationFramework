@@ -26,9 +26,13 @@ pipeline
         
             }
          }
-         stage ('Starting ART job') 
+         
+         stage ('Starting Next job') 
          {
-    		build job: 'APITestFramework'            
+            steps 
+            {
+  				build job: "APITestFramework", wait: false   
+            }            
             post 
             {
   	 			success 
