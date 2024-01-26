@@ -21,17 +21,9 @@ pipeline
                 //env.module
                 //env.exeType
                 //env.
-                sh 'mvn clean test -Dmaven.test.failure.ignore=true' 
-            }
-            post 
-            {
-               
-                    archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
-                    archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
-                    echo 'Successfully!'
-                     success 
-                {
-	               script {
+                sh 'mvn clean test -Dmaven.test.failure.ignore=true'
+                
+                script {
 	                    try {
 	                        // do something that fails
 	                        //sh "exit 1"
@@ -39,7 +31,18 @@ pipeline
 	                    } catch (Exception err) {
 	                        currentBuild.result = 'SUCCESS'
 	                    }
-	                }
+	                } 
+            }
+            
+            post 
+            {
+               
+                    archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
+                    archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
+                    echo 'Successfully!'
+                     success 
+                  {
+	               
                 }
                 
 		        failure {
