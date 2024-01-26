@@ -36,7 +36,6 @@ pipeline
                     }
                 
 		        failure {
-		       		currentBuild.result = 'SUCCESS'
 		            echo 'Failed!'
 		        }
 		        unstable {
