@@ -23,22 +23,14 @@ pipeline
                 //env.
                 sh 'mvn clean test -Dmaven.test.failure.ignore=true'
                 
-                script {
-	                    try {
-	                        // do something that fails
-	                        //sh "exit 1"
-	                        currentBuild.result = 'SUCCESS'
-	                    } catch (Exception err) {
-	                        currentBuild.result = 'SUCCESS'
-	                    }
-	                } 
+        
             }
             
             post 
             {
   	 			success 
                     {
-	               archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
+	                archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
                     archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
                     echo 'Successfully!'
                     }
