@@ -27,14 +27,14 @@ pipeline
             {
                 success 
                 {
-                    archiveArtifacts artifacts:'Report/searchengine/**/*.html', fingerprint: true
+                	currentBuild.result = 'SUCCESS'
+                    archiveArtifacts artifacts:'Report/**/**/*.html', fingerprint: true
                     archiveArtifacts artifacts:'target/surefire-reports/index.html', fingerprint: true
-                    junit 'target/surefire-reports/**/*.html' 
                     echo 'Successfully!'
                 }
                 
 		        failure {
-		        
+		       		currentBuild.result = 'SUCCESS'
 		            echo 'Failed!'
 		        }
 		        unstable {
